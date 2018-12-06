@@ -1,86 +1,31 @@
 <!DOCTYPE html>
-<!--
-Template Name: Decentium
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
-<html>
-<head>
-    <title>Login page</title>
+<html lang="fr" dir="ltr">
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-    <style type="text/css">
-        /* DEMO ONLY */
-        .container .demo{text-align:center;}
-        .container .demo div{padding:8px 0;}
-        .container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
-        .container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
-        @media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
-        /* DEMO ONLY */
-    </style>
-</head>
-<body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
-    <!-- ################################################################################################ -->
-    <div class="wrapper row1">
-        <header id="header" class="hoc clear">
-            <!-- ################################################################################################ -->
-            <div id="logo" class="fl_left">
-                <h1><a href="index.html">Login Page</a></h1>
-            </div>
-            <nav id="mainav" class="fl_right">
-                <ul class="clear">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="tuto.html">Tuto</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- ################################################################################################ -->
-        </header>
-    </div>
+    <link rel="stylesheet" href="login.css">
+    <title>Page de connexion</title>
+  </head>
+  <body>
+    <form action="action_page.php">
+     <div class="container">
+       <h1>Inscription</h1>
+       <p>Remplisser ce formulaire pour vous connecter</p>
+       <hr>
+       <label for="email"><b>Nom d'utilisateur</b></label>
+       <input type="text" placeholder="Enter Email" name="email" required>
 
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3">
-    <main class="hoc container clear">
-        <!-- main body -->
-        <!-- ################################################################################################ -->
-        <div class="content">
-            <!-- ################################################################################################ -->
-            <h1><font color="black">Login page</font></h1>
-            <div class="scrollable">
+       <label for="psw"><b>Mot de passe</b></label>
+       <input type="password" placeholder="Enter Password" name="psw" required>
 
-            </div>
+       <label for="psw-repeat"><b>Repetez le mot de passe</b></label>
+       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+       <hr>
+       <button type="submit" class="registerbtn">Register</button>
+     </div>
 
-    </main>
-</div>
-<div class="wrapper row5">
-    <div id="copyright" class="hoc clear">
-        <!-- ################################################################################################ -->
-        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Mobilini</a></p>
-
-        <!-- ################################################################################################ -->
-    </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
-<script src="layout/scripts/jquery.flexslider-min.js"></script>
-</body>
+     <div class="container signin">
+       <p>Vous avez deja un compte ? <a href="#">Se connecter</a>.</p>
+     </div>
+    </form>
+  </body>
 </html>
