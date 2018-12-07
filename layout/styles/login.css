@@ -66,3 +66,18 @@ span.psw {
    width: 100%;
  }
 }
+
+/**.carre {
+  width: 30px;
+  height: 30px;
+  background-color: aquamarine;
+  margin: 10px;
+}**/
+
+.carre	      {width: 30px;
+  height: 30px; background: rgb(26, 100, 197);}
+.carre:hover	  {width: 30px;
+  height: 30px; background: rgb(196, 19, 19);}
+.carre:active  {width: 30px;
+  height: 30px; background: rgb(172, 81, 81);}
+.carre:focus   {background: #000;}
