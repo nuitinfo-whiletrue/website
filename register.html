@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="layout/styles/login.css">
+    <title>Page d'inscription</title>
+  </head>
+  <body>
+    <div class="resserer">
+      <form action="action_page.php">
+        <div class="register-container" style="background-color:#ffffff">
+          <label for="name"><b>Nom</b></label>
+          <input type="text" placeholder="Entrez votre Nom" name="nom" required>
+
+          <label for="surname"><b>Prénom</b></label>
+          <input type="text" placeholder="Entrez votre Prénom" name="surname" required>
+
+          <label for="username"><b>Nom d'utilisateur</b></label>
+          <input type="text" placeholder="Entrez votre nom d'utilisateur" name="username" required>
+
+          <label for="password"><b>Mot de passe</b></label>
+          <input type="password" placeholder="Entrez vore mot de passse" name="password" required>
+        </div>
+        <button type="submit">S'enregistrer</button>
+      </form>
+      <button type="button" style="background-color:orange" class="button" value="Créer un compte" onclick="javascript:location.href='login.html'">
+        Se connecter
+      </button>
+    </div>
+  </body>
+</html>
