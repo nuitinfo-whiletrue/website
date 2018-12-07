@@ -8,13 +8,10 @@
         $ligne = fgets($fichierJSON);
         $arr = json_decode($ligne, true);
         $arr[] = array("nom" => $_POST['name'], "prenom" => $_POST['surname'], "id" => $_POST['username'], "mdp" => $_POST['password']); 
-        var_dump($arr); 
         $ligne = json_encode($arr);
          ftruncate($fichierJSON, 0);
         fputs($fichierJSON, $ligne); 
-         
- 
-        echo 'Connexion échouée'; 
+        header('Location: index.html');
 
     fclose($fichierJSON); 
     
