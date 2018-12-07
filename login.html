@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="resserer">
-      <form action="action_page.php">
+      <form action="http://localhost:8080/Documents/NuitDeLinfo/website/action_page_login.php" method="post">
          <div class="container">
            <label for="username"><b>Nom d'utilisateur</b></label>
            <input type="text" placeholder="Entrez votre nom d'utilisateur" name="username">
@@ -19,9 +19,31 @@
            <button type="reset" style="background-color:red" class="button">Réinitialiser</button>
          </div>
       </form>
+      <table border="1px">
+        <tr>
+          <td> <div class="carre"> </div> </td>
+          <td> lol </td>
+          <td> lol </td>
+        </tr>
+        <tr>
+          <td> lol </td>
+          <td> lol </td>
+          <td> lol </td>
+        </tr>
+        <tr>
+          <td> lol </td>
+          <td> lol </td>
+          <td> lol </td>
+        </tr>
+      </table>
       <button type="button" style="background-color:orange" class="button" value="Créer un compte" onclick="javascript:location.href='register.html'">
         Créer un compte
       </button>
     </div>
   </body>
+  <script>
+    function color() {
+      document.getElementById('carre').style.color = "red"; 
+    }
+  </script>
 </html>
